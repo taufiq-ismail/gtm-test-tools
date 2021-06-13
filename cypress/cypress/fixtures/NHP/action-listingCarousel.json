@@ -1,0 +1,16 @@
+{
+  "event": "listingCarousel",
+  "source": "NHP-New Launch",
+  "target": "",
+  "user": {
+    "client": {
+      "id": "",
+      "language": "id-ID"
+    },
+    "login": {
+      "id": "",
+      "status": "logged-out",
+      "type": "Email"
+    }
+  }
+}

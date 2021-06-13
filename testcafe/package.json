@@ -1,0 +1,14 @@
+{
+  "name": "testcafe-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe \"chrome --window-size='1600,900'\" tests/index.js --skip-js-errors --disableMultipleWindows"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.14.2"
+  }
+}
