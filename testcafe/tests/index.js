@@ -54,16 +54,19 @@ test.skip("Check NHP-New Launch-Bottom section datalayer is exist", async (t) =>
   await t.expect(listingHot).notEql(undefined);
 });
 
-test.skip("Check Listing Carousel action and data layer is exist", async (t) => {
+test("Check Listing Carousel action and data layer is exist", async (t) => {
   await t.wait(3000);
   await t
-    .expect(Selector(".ui-molecules-carousel__action--next").visible)
-    .notOk();
+    .expect(Selector(".ui-molecules-card-carousel-r123__content").visible)
+    .ok();
   await t.maximizeWindow();
-  await t
-    .expect(Selector(".ui-molecules-carousel__action--next").visible)
-    .ok()
-    .click(Selector(".ui-molecules-carousel__action--next"));
+  await t.click(
+    Selector(".ui-molecules-card-carousel-r123__content")
+      .child("div")
+      .nth(1)
+      .child("div")
+      .nth(1)
+  );
   const dataLayer = await getWindowDataLayer();
   const carouselAction = dataLayer.find(
     (x) => x.event === "listingCarousel" && x.source === "NHP-New Launch"
