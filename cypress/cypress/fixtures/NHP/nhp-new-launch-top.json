@@ -1,0 +1,50 @@
+{
+    "event": "listingHot",
+    "listingImpressions": [
+        {
+            "agent": "",
+            "brand": "",
+            "category": "PrimaryGold",
+            "id": "2280",
+            "list": "NHP-New Launch-Top",
+            "name": "Muhasabah Land Cluster Alsagriya",
+            "page": null,
+            "position": 1,
+            "price": "324500000",
+            "product": "PrimaryGold",
+            "propertyType": "Rumah",
+            "subproduct": "",
+            "type": "new",
+            "variant": "new"
+        },
+        {
+            "agent": "",
+            "brand": "",
+            "category": "PrimaryGold",
+            "id": "2364",
+            "list": "NHP-New Launch-Top",
+            "name": "Andara Terrace Residence",
+            "page": null,
+            "position": 2,
+            "price": "195000000",
+            "product": "PrimaryGold",
+            "propertyType": "Rumah",
+            "subproduct": "",
+            "type": "new",
+            "variant": "new"
+        }
+    ],
+    "source": "NHP-New Launch-Top",
+    "target": "",
+    "user": {
+        "client": {
+            "id": "",
+            "language": "id-ID"
+        },
+        "login": {
+            "id": "",
+            "status": "logged-out",
+            "type": "Email"
+        }
+    }
+}

@@ -21,9 +21,9 @@ const enableNavigationControl = ClientFunction((selector) => {
   );
 });
 
-fixture`Sample`.page(url).httpAuth(credentials).requestHooks(logger);
+fixture`New Launch Homepage`.page(url).httpAuth(credentials).requestHooks(logger);
 
-test.skip("Find datalayer is exist", async (t) => {
+test("Check gtm request is exist", async (t) => {
   const dataLayer = await getWindowDataLayer();
   await t.wait(2000);
   await t.expect(dataLayer.length).gt(0);
@@ -32,13 +32,13 @@ test.skip("Find datalayer is exist", async (t) => {
     .eql(true);
 });
 
-test.skip("Check pageview section datalayer is exist", async (t) => {
+test("Check pageview section datalayer is exist", async (t) => {
   const dataLayer = await getWindowDataLayer();
   const pageView = dataLayer.find((x) => x.event === "pageview");
   await t.expect(pageView).notEql(undefined);
 });
 
-test.skip("Check NP-New Launch-Top section datalayer is exist", async (t) => {
+test("Check NP-New Launch-Top section datalayer is exist", async (t) => {
   const dataLayer = await getWindowDataLayer();
   const listingHot = dataLayer.find(
     (x) => x.event === "listingHot" && x.source === "NHP-New Launch-Top"
@@ -46,7 +46,7 @@ test.skip("Check NP-New Launch-Top section datalayer is exist", async (t) => {
   await t.expect(listingHot).notEql(undefined);
 });
 
-test.skip("Check NHP-New Launch-Bottom section datalayer is exist", async (t) => {
+test("Check NHP-New Launch-Bottom section datalayer is exist", async (t) => {
   const dataLayer = await getWindowDataLayer();
   const listingHot = dataLayer.find(
     (x) => x.event === "listingHot" && x.source === "NHP-New Launch-Bottom"
@@ -74,7 +74,7 @@ test("Check Listing Carousel action and data layer is exist", async (t) => {
   await t.expect(carouselAction).notEql(undefined);
 });
 
-test.skip("Test Listing Click action and check if datalayer is exist", async (t) => {
+test("Test Listing Click action and check if datalayer is exist", async (t) => {
   const clickedObject = Selector(".ui-organisms-card-r123-popular__logo").nth(
     0
   );
