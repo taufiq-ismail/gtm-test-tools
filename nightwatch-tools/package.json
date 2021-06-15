@@ -1,0 +1,19 @@
+{
+    "name": "nightwatch-tools",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx nightwatch"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "chromedriver": "^91.0.1",
+        "geckodriver": "^2.0.0",
+        "nightwatch": "^1.7.3"
+    },
+    "dependencies": {
+        "chai": "^4.3.4"
+    }
+}

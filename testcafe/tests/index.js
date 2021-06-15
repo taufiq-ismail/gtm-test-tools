@@ -14,7 +14,6 @@ const disableNavigation = ClientFunction(
 );
 const enableNavigationControl = ClientFunction((selector) => {
   const element = selector();
-
   element.addEventListener(
     "click",
     (event) => window.disableNavigation && event.preventDefault()
@@ -24,9 +23,7 @@ const enableNavigationControl = ClientFunction((selector) => {
 fixture`New Launch Homepage`.page(url).httpAuth(credentials).requestHooks(logger);
 
 test("Check gtm request is exist", async (t) => {
-  const dataLayer = await getWindowDataLayer();
-  await t.wait(2000);
-  await t.expect(dataLayer.length).gt(0);
+  await t.wait(3000);
   await t
     .expect(logger.contains((record) => record.request.url.includes("gtm.js")))
     .eql(true);
