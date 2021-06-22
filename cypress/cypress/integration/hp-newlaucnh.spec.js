@@ -2,17 +2,17 @@ const url = "http://release.core.rumah123.com/perumahan-baru/";
 const gtmRequest = "https://www.googletagmanager.com/gtm.js?id=*";
 const viewport = "macbook-15";
 const auth = {
-  username: "core",
   password: "core99iddev",
+  username: "core"
 };
 
-describe("Data Tracker NHP", function () {
-  beforeEach(function () {
+describe("Data Tracker NHP", () => {
+  beforeEach(() => {
     cy.viewport(viewport).visit(url, {
-      auth,
+      auth
     });
   });
-  it("Check gtm request is exist", function () {
+  it("Check gtm request is exist", () => {
     cy.intercept("GET", gtmRequest, (req) => {
       req.continue((response) => {
         expect(response.statusCode).to.equal(200);
@@ -20,14 +20,14 @@ describe("Data Tracker NHP", function () {
     });
   });
 
-  it("Check pageview section datalayer is exist", function () {
+  it("Check pageview section datalayer is exist", () => {
     cy.window().then((win) => {
       const pageView = win.dataLayer.find((x) => x.event === "pageview");
       assert.isDefined(pageView);
     });
   });
 
-  it("Check NHP-New Launch-Bottom section datalayer is exist", function () {
+  it("Check NHP-New Launch-Bottom section datalayer is exist", () => {
     cy.window().then((win) => {
       const listingHot = win.dataLayer.find(
         (x) => x.event === "listingHot" && x.source === "NHP-New Launch-Bottom"
@@ -45,7 +45,7 @@ describe("Data Tracker NHP", function () {
     });
   });
 
-  it("Check NHP-New Launch-Top section datalayer is exist", function () {
+  it("Check NHP-New Launch-Top section datalayer is exist", () => {
     cy.window().then((win) => {
       const listingHot = win.dataLayer.find(
         (x) => x.event === "listingHot" && x.source === "NHP-New Launch-Top"
@@ -63,7 +63,7 @@ describe("Data Tracker NHP", function () {
     });
   });
 
-  it("Check Listing Carousel action and data layer is exist", function () {
+  it("Check Listing Carousel action and data layer is exist", () => {
     cy.wait(3000)
       .get(".rui-icon-arrow-right-small")
       .eq(1)
@@ -80,11 +80,12 @@ describe("Data Tracker NHP", function () {
     });
   });
 
-  it("Check Listing Click action and data layer is exist", function () {
+  it("Check Listing Click action and data layer is exist", () => {
     cy.wait(300);
     cy.get(".ui-organisms-card-r123-popular").eq(1).click({
-      ctrlKey: true,
+      ctrlKey: true
     });
+
     cy.window().then((win) => {
       console.debug(win.dataLayer);
       const listingCarousel = win.dataLayer.find(
