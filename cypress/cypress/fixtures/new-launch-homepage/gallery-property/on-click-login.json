@@ -1,0 +1,57 @@
+{
+  "event":"listingClick",
+  "listing":{
+      "agent":{
+          "agency":"",
+          "id":"1273",
+          "name":"PT. Java Swiss International",
+          "type":"developer"
+      },
+      "channel":"new",
+      "id":"2466",
+      "link":"/perumahan-baru/properti/lebak/tulip-rangkas-residence/nps2466/",
+      "market":"local",
+      "price":"176000000",
+      "priceCurrency":"IDR",
+      "priceRangeSale":"Low",
+      "product":{
+          "id":"2",
+          "name":"PrimaryGold",
+          "subname":""
+      },
+      "property":{
+          "bathrooms":"",
+          "bedrooms":"",
+          "carparks":"",
+          "developer":"",
+          "facilities":[
+
+          ],
+          "floor":"",
+          "id":"",
+          "locationLevel1":"banten",
+          "locationLevel2":"lebak",
+          "locationLevel3":"cibadak",
+          "name":"Tulip Rangkas Residence",
+          "size1":"Dari 30 - 54",
+          "size2":"Dari 60 - 120",
+          "type":"Rumah"
+      },
+      "status":"Active",
+      "subtitle":"",
+      "title":"Tulip Rangkas Residence"
+  },
+  "source":"NHP-New Launch-Bottom",
+  "target":"",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"70491",
+          "status":"logged-in",
+          "type":"Email"
+      }
+  }
+}
