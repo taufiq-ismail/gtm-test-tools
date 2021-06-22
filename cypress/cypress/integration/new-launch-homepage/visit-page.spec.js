@@ -16,15 +16,12 @@ describe("Tracker On Visit New Launch Page", () => {
       cy.window().then((win) => {
         const pageView = win.dataLayer.find((x) => x.event === "pageview");
 
-        assert.isDefined(pageView);
-        assert.deepEqual(pageView, {
-          event: "pageview",
-          source: "NHP",
-          userInfo: {
-            client: { id: "", language: "id-ID" },
-            login: { id: "", status: "logged-out", type: "Email" }
+        cy.fixture("new-launch-homepage/visit-page/non-login").then(
+          (fixture) => {
+            assert.isDefined(pageView);
+            assert.deepEqual(pageView, fixture);
           }
-        });
+        );
       });
     });
   });
@@ -52,14 +49,9 @@ describe("Tracker On Visit New Launch Page", () => {
       cy.window().then((win) => {
         const pageView = win.dataLayer.find((x) => x.event === "pageview");
 
-        assert.isDefined(pageView);
-        assert.deepEqual(pageView, {
-          event: "pageview",
-          source: "NHP",
-          userInfo: {
-            client: { id: "", language: "id-ID" },
-            login: { id: "", status: "logged-out", type: "Email" }
-          }
+        cy.fixture("new-launch-homepage/visit-page/login").then((fixture) => {
+          assert.isDefined(pageView);
+          assert.deepEqual(pageView, fixture);
         });
       });
     });

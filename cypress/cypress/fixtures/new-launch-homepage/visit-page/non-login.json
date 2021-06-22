@@ -1,0 +1,8 @@
+{
+  "event": "pageview",
+  "source": "NHP",
+  "userInfo": {
+    "client": { "id": "", "language": "id-ID" },
+    "login": { "id": "", "status": "logged-out", "type": "Email" }
+  }
+}

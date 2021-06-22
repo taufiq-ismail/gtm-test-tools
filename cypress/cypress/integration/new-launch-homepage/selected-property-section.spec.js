@@ -12,19 +12,93 @@ describe("Testing Selected Property Section", () => {
       });
     });
 
-    it("Check pageview section datalayer is exist", () => {
+    it("Is send tracker listing hot when user first load", () => {
       cy.window().then((win) => {
-        const pageView = win.dataLayer.find((x) => x.event === "pageview");
+        const listingHot = win.dataLayer.find(
+          ({ event, source }) =>
+            event === "listingHot" && source === "NHP-New Launch-Top"
+        );
 
-        assert.isDefined(pageView);
-        assert.deepEqual(pageView, {
-          event: "pageview",
-          source: "NHP",
-          userInfo: {
-            client: { id: "", language: "id-ID" },
-            login: { id: "", status: "logged-out", type: "Email" }
-          }
+        cy.fixture(
+          "new-launch-homepage/selected-property/listing-hot-non-login"
+        ).then((fixture) => {
+          assert.isDefined(listingHot);
+          assert.deepEqual(listingHot, fixture);
         });
+      });
+    });
+
+    it("Is send tracker listing click when user click one of selected property card", () => {
+      cy.get("div.ui-organisms-card-r123-sponsored-property > a").eq(0).click({
+        commandKey: true,
+        ctrlKey: true
+      });
+
+      cy.window().then((win) => {
+        const selectedProperty = win.dataLayer.find(
+          ({ event, source }) =>
+            source === "NHP-New Launch-Top" && event === "listingClick"
+        );
+
+        cy.fixture(
+          "new-launch-homepage/selected-property/on-click-non-login"
+        ).then((fixture) => {
+          assert.isDefined(selectedProperty);
+          assert.deepEqual(selectedProperty, fixture);
+        });
+      });
+    });
+  });
+
+  describe("Testing Login", () => {
+    beforeEach(() => {
+      cy.viewport("macbook-15")
+        .visit(Cypress.env("NEW_LAUNCH_PAGE"))
+        .doLoginR123AndRefresh();
+    });
+
+    it("Check gtm request is exist", () => {
+      cy.intercept("GET", Cypress.env("GTM_ENDPOINT"), (req) => {
+        req.continue((response) => {
+          expect(response.statusCode).to.equal(200);
+        });
+      });
+    });
+
+    it("Is send tracker listing hot when user first load", () => {
+      cy.window().then((win) => {
+        const listingHot = win.dataLayer.find(
+          ({ event, source }) =>
+            event === "listingHot" && source === "NHP-New Launch-Top"
+        );
+
+        cy.fixture(
+          "new-launch-homepage/selected-property/listing-hot-login"
+        ).then((fixture) => {
+          assert.isDefined(listingHot);
+          assert.deepEqual(listingHot, fixture);
+        });
+      });
+    });
+
+    it("Is send tracker listing click when user click one of selected property card", () => {
+      cy.get("div.ui-organisms-card-r123-sponsored-property > a").eq(0).click({
+        commandKey: true,
+        ctrlKey: true
+      });
+
+      cy.window().then((win) => {
+        const selectedProperty = win.dataLayer.find(
+          ({ event, source }) =>
+            source === "NHP-New Launch-Top" && event === "listingClick"
+        );
+
+        cy.fixture("new-launch-homepage/selected-property/on-click-login").then(
+          (fixture) => {
+            assert.isDefined(selectedProperty);
+            assert.deepEqual(selectedProperty, fixture);
+          }
+        );
       });
     });
   });
