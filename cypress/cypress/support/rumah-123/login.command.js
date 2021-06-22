@@ -1,5 +1,5 @@
 Cypress.Commands.add(
-  "doLoginR123",
+  "doLogin",
   (username = "123.superqa@gmail.com", password = "rumahnya123") => {
     cy.get(".ui-organism-navbar-r123__login").then((element) => {
       const text = element.text();
@@ -16,7 +16,7 @@ Cypress.Commands.add(
 );
 
 Cypress.Commands.add(
-  "doLoginR123AndRefresh",
+  "doLoginAndRefresh",
   (username = "123.superqa@gmail.com", password = "rumahnya123") => {
     cy.get(".ui-organism-navbar-r123__login").then((element) => {
       const text = element.text();

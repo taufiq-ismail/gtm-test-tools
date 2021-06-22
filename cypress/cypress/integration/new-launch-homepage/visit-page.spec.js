@@ -28,9 +28,7 @@ describe("Tracker On Visit New Launch Page", () => {
 
   describe("Testing With Login", () => {
     before(() => {
-      cy.viewport("macbook-15")
-        .visit(Cypress.env("NEW_LAUNCH_PAGE"))
-        .doLoginR123();
+      cy.viewport("macbook-15").visit(Cypress.env("NEW_LAUNCH_PAGE")).doLogin();
     });
 
     beforeEach(() => {

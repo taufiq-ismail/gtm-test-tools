@@ -54,7 +54,7 @@ describe("Testing Selected Property Section", () => {
     beforeEach(() => {
       cy.viewport("macbook-15")
         .visit(Cypress.env("NEW_LAUNCH_PAGE"))
-        .doLoginR123AndRefresh();
+        .doLoginAndRefresh();
     });
 
     it("Check gtm request is exist", () => {
