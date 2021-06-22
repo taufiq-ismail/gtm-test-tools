@@ -1,0 +1,57 @@
+{
+  "agent":{
+      "agency":"",
+      "id":"",
+      "name":"",
+      "type":""
+  },
+  "event":"listingClick",
+  "listing":{
+      "channel":"new",
+      "id":"1650",
+      "link":"/perumahan-baru/properti/makassar/summarecon-mutiara-makassar/nps1650/",
+      "market":"local",
+      "price":"758990000",
+      "priceCurrency":"IDR",
+      "priceRangeRent":"",
+      "priceRangeSale":"Mid to Mid High",
+      "product":{
+          "id":"4",
+          "name":"PrimaryPlatinum",
+          "subname":""
+      },
+      "property":{
+          "bathrooms":"0",
+          "bedrooms":"0",
+          "carparks":"0",
+          "developer":"",
+          "facilities":[
+
+          ],
+          "floor":"0",
+          "id":"",
+          "locationLevel1":"sulawesi-selatan",
+          "locationLevel2":"makassar",
+          "locationLevel3":"biring-kanaya",
+          "name":"",
+          "size1":"Dari 64 - 115m²",
+          "size2":"Hingga 112m²"
+      },
+      "status":"Active",
+      "subtitle":"",
+      "title":"Summarecon Mutiara Makassar"
+  },
+  "source":"HP-Hot Properties",
+  "target":"",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"70491",
+          "status":"logged-in",
+          "type":"Email"
+      }
+  }
+}

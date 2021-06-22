@@ -1,0 +1,44 @@
+{
+  "event":"listingHot",
+  "listingImpressions":[
+      {
+          "agent":"",
+          "category":"PrimaryPlatinum",
+          "id":"1650",
+          "list":"HP-Popular Properties",
+          "name":"Summarecon Mutiara Makassar",
+          "page":null,
+          "position":0,
+          "price":"758990000",
+          "product":"PrimaryPlatinum",
+          "type":"new",
+          "variant":"new"
+      },
+      {
+          "agent":"",
+          "category":"PrimaryPlatinum",
+          "id":"1763",
+          "list":"HP-Popular Properties",
+          "name":"Anwa Residence Bintaro",
+          "page":null,
+          "position":1,
+          "price":"500000000",
+          "product":"PrimaryPlatinum",
+          "type":"new",
+          "variant":"new"
+      }
+  ],
+  "source":"HP-Hot Properties",
+  "target":"",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"70491",
+          "status":"logged-in",
+          "type":"Email"
+      }
+  }
+}

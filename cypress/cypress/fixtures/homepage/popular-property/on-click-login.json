@@ -1,0 +1,57 @@
+{
+  "agent":{
+      "agency":"",
+      "id":"",
+      "name":"",
+      "type":""
+  },
+  "event":"listingClick",
+  "listing":{
+      "channel":"new",
+      "id":"2291",
+      "link":"/perumahan-baru/properti/karawang/de-keraton-kosambi-karawang/nps2291/",
+      "market":"local",
+      "price":"140000000",
+      "priceCurrency":"IDR",
+      "priceRangeRent":"",
+      "priceRangeSale":"Low",
+      "product":{
+          "id":"4",
+          "name":"PrimaryPlatinum",
+          "subname":""
+      },
+      "property":{
+          "bathrooms":"0",
+          "bedrooms":"0",
+          "carparks":"0",
+          "developer":"",
+          "facilities":[
+
+          ],
+          "floor":"0",
+          "id":"",
+          "locationLevel1":"jawa-barat",
+          "locationLevel2":"karawang",
+          "locationLevel3":"klari",
+          "name":"",
+          "size1":"Dari 27 - 27m²",
+          "size2":"Dari 60 - 60m²"
+      },
+      "status":"Active",
+      "subtitle":"",
+      "title":"De Keraton Kosambi Karawang"
+  },
+  "source":"HP-Popular Properties",
+  "target":"",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"70491",
+          "status":"logged-in",
+          "type":"Email"
+      }
+  }
+}

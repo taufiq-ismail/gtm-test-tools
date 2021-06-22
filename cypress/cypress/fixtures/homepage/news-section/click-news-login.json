@@ -1,0 +1,16 @@
+{
+  "event":"navigationInternal",
+  "source":"HP-Featured Article",
+  "target":"https://artikel.rumah123.com/5-langkah-menanam-sirih-gading-di-botol-air-mudah-banget-91938",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"70491",
+          "status":"logged-in",
+          "type":"Email"
+      }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "event":"navigationInternal",
+  "source":"HP",
+  "target":"https://release.core.rumah123.com/tentang-kami/",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"",
+          "status":"logged-out",
+          "type":"Email"
+      }
+  }
+}

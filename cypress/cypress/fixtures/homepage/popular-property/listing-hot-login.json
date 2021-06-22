@@ -1,0 +1,96 @@
+{
+  "event":"listingHot",
+  "listingImpressions":[
+      {
+          "agent":"",
+          "category":"PrimaryPlatinum",
+          "id":"2291",
+          "list":"HP-Popular Properties",
+          "name":"De Keraton Kosambi Karawang",
+          "page":null,
+          "position":0,
+          "price":"140000000",
+          "product":"PrimaryPlatinum",
+          "type":"new",
+          "variant":"new"
+      },
+      {
+          "agent":"",
+          "category":"PrimaryPlatinum",
+          "id":"2264",
+          "list":"HP-Popular Properties",
+          "name":"The Jasmine Boulevard",
+          "page":null,
+          "position":1,
+          "price":"448000000",
+          "product":"PrimaryPlatinum",
+          "type":"new",
+          "variant":"new"
+      },
+      {
+          "agent":"",
+          "category":"PrimaryPlatinum",
+          "id":"2212",
+          "list":"HP-Popular Properties",
+          "name":"Meikarta",
+          "page":null,
+          "position":2,
+          "price":"220000000",
+          "product":"PrimaryPlatinum",
+          "type":"new",
+          "variant":"new"
+      },
+      {
+          "agent":"",
+          "category":"PrimaryPlatinum",
+          "id":"1643",
+          "list":"HP-Popular Properties",
+          "name":"Samira Residence Sentul",
+          "page":null,
+          "position":3,
+          "price":"1455300000",
+          "product":"PrimaryPlatinum",
+          "type":"new",
+          "variant":"new"
+      },
+      {
+          "agent":"",
+          "category":"PrimaryPlatinum",
+          "id":"1656",
+          "list":"HP-Popular Properties",
+          "name":"Samira Regency Bekasi",
+          "page":null,
+          "position":4,
+          "price":"501900000",
+          "product":"PrimaryPlatinum",
+          "type":"new",
+          "variant":"new"
+      },
+      {
+          "agent":"",
+          "category":"PrimaryPlatinum",
+          "id":"1651",
+          "list":"HP-Popular Properties",
+          "name":"Jade Park Serpong 2",
+          "page":null,
+          "position":5,
+          "price":"546010000",
+          "product":"PrimaryPlatinum",
+          "type":"new",
+          "variant":"new"
+      }
+  ],
+  "source":"HP-Popular Properties",
+  "target":"",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"70491",
+          "status":"logged-in",
+          "type":"Email"
+      }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "event":"pageview",
+  "source":"HP",
+  "userInfo":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"70491",
+          "status":"logged-in",
+          "type":"Email"
+      }
+  }
+}
