@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/no-extraneous-dependencies */
 /// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
@@ -12,11 +14,17 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-/**
- * @type {Cypress.PluginConfig}
- */
-// eslint-disable-next-line no-unused-vars
+require("dotenv").config();
+require("cypress-watch-and-reload/plugins");
+const selectTestsWithGrep = require("cypress-select-tests/grep");
+
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+  // copy any needed variables from process.env to config.env
+  // eslint-disable-next-line no-param-reassign
+  config.env = { ...config.env, ...(process.env || {}) };
+
+  on("file:preprocessor", selectTestsWithGrep(config));
+
+  // do not forget to return the changed config object!
+  return config;
 };
