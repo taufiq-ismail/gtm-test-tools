@@ -1,0 +1,137 @@
+{
+    "env":{
+        "browser":true,
+        "es6":true,
+        "cypress/globals": true
+    },
+    "parserOptions":{
+        "ecmaFeatures":{
+            "jsx":true
+        },
+        "ecmaVersion":2019,
+        "sourceType":"module"
+    },
+    "globals":{
+        "Atomics":"readonly",
+        "SharedArrayBuffer":"readonly",
+        "ResizeObserverCallback": "readonly"
+    },
+    "plugins":[
+        "import",
+        "jsx-a11y",
+        "prettier",
+        "require-jsdoc-except",
+        "simple-import-sort",
+        "sort-destructure-keys",
+        "sort-keys-fix",
+        "sort-exports",
+        "cypress"
+    ],
+    "extends":[
+        "airbnb",
+        "eslint-config-prettier",
+        "prettier/react"
+    ],
+    "rules":{
+        "camelcase":"off",
+        "import/prefer-default-export":"off",
+        "import/extensions":[
+            "error",
+            "ignorePackages",
+            {
+                "ts":"never",
+                "tsx":"never",
+                "js":"never",
+                "jsx":"never"
+            }
+        ],
+        "quotes":"off",
+        "jsx-a11y/anchor-is-valid":[
+            "error",
+            {
+                "components":[
+                    "Link"
+                ],
+                "specialLink":[
+                    "hrefLeft",
+                    "hrefRight"
+                ],
+                "aspects":[
+                    "invalidHref",
+                    "preferButton"
+                ]
+            }
+        ],
+        // custom rules
+        "default-case": "off",
+        "no-shadow": "off",
+        "sort-exports/sort-exports": ["error", {"sortDir": "asc"}],
+        "import/no-dynamic-require": "off",
+        "global-require": "off",
+        "class-methods-use-this": "off",
+        "prettier/prettier":[
+            "error",
+            {
+                "trailingComma": "none"
+            }
+        ],
+        "comma-dangle":[
+            "error",
+            "never"
+        ],
+        "sort-destructure-keys/sort-destructure-keys":[
+            "error",
+            {
+                "caseSensitive":false
+            }
+        ],
+        "sort-keys-fix/sort-keys-fix": 2,
+        "sort-imports":"off",
+        "import/order":"off",
+        "simple-import-sort/imports":[
+            "error",
+            {
+                "groups":[
+                    [
+                        "^@?\\w"
+                    ],
+                    [
+                        "@/"
+                    ],
+                    [
+                        "(?=.*.interface$)"
+                    ],
+                    [
+                        "(?=.*.const$)"
+                    ],
+                    [
+                        "(?=.*.spec$)"
+                    ],
+                    [
+                        "^\\u0000",
+                        "^\\.\\.(?!/?$)",
+                        "^\\.\\./?$",
+                        "^\\./(?=.*/)(?!/?$)",
+                        "^\\.(?!/?$)",
+                        "^\\./?$"
+                    ]
+                ]
+            }
+        ],
+        "require-jsdoc-except/require-jsdoc":[
+            "error",
+            {
+                "ignore":[
+                    "constructor"
+                ],
+                "require":{
+                    "ArrowFunctionExpression":true,
+                    "ClassDeclaration":true,
+                    "FunctionDeclaration":true,
+                    "FunctionExpression":true,
+                    "MethodDefinition":true
+                }
+            }
+        ]
+    }
+}
