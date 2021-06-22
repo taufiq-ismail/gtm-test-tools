@@ -1,0 +1,16 @@
+{
+  "event":"navigationInternal",
+  "source":"NHP-Featured Article",
+  "target":"https://artikel.rumah123.com/intip-rumah-milik-farida-nurhan-di-kampung-mantan-tkw-yang-sukses-jadi-youtuber-91921",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"",
+          "status":"logged-out",
+          "type":"Email"
+      }
+  }
+}

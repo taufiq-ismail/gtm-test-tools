@@ -1,0 +1,66 @@
+{
+  "event":"listingHot",
+  "listingImpressions":[
+      {
+          "agent":"",
+          "brand":"",
+          "category":"PrimaryGold",
+          "id":"2466",
+          "list":"NHP-New Launch-Bottom",
+          "name":"Tulip Rangkas Residence",
+          "page":null,
+          "position":1,
+          "price":"176000000",
+          "product":"PrimaryGold",
+          "propertyType":"Rumah",
+          "subproduct":"",
+          "type":"new",
+          "variant":"new"
+      },
+      {
+          "agent":"",
+          "brand":"",
+          "category":"PrimaryGold",
+          "id":"1725",
+          "list":"NHP-New Launch-Bottom",
+          "name":"Cendana Residence",
+          "page":null,
+          "position":2,
+          "price":"750000000",
+          "product":"PrimaryGold",
+          "propertyType":"Rumah",
+          "subproduct":"",
+          "type":"new",
+          "variant":"new"
+      },
+      {
+          "agent":"",
+          "brand":"",
+          "category":"PrimaryGold",
+          "id":"2349",
+          "list":"NHP-New Launch-Bottom",
+          "name":"Andar River Park",
+          "page":null,
+          "position":3,
+          "price":"437800000",
+          "product":"PrimaryGold",
+          "propertyType":"Rumah",
+          "subproduct":"",
+          "type":"new",
+          "variant":"new"
+      }
+  ],
+  "source":"NHP-New Launch-Bottom",
+  "target":"",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"",
+          "status":"logged-out",
+          "type":"Email"
+      }
+  }
+}
