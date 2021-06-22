@@ -1,17 +1,12 @@
 const url = "http://release.core.rumah123.com/perumahan-baru/";
 const gtmRequest = "https://www.googletagmanager.com/gtm.js?id=*";
 const viewport = "macbook-15";
-const auth = {
-  password: "core99iddev",
-  username: "core"
-};
 
 describe("Data Tracker NHP", () => {
   beforeEach(() => {
-    cy.viewport(viewport).visit(url, {
-      auth
-    });
+    cy.viewport(viewport).visit(url);
   });
+
   it("Check gtm request is exist", () => {
     cy.intercept("GET", gtmRequest, (req) => {
       req.continue((response) => {

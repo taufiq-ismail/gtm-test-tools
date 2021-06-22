@@ -1,0 +1,57 @@
+{
+  "event":"listingClick",
+  "listing":{
+      "agent":{
+          "agency":"",
+          "id":"1205",
+          "name":"Muhasabah Land",
+          "type":"developer"
+      },
+      "channel":"new",
+      "id":"2280",
+      "link":"/perumahan-baru/properti/bandung/muhasabah-land-cluster-alsagriya/nps2280/",
+      "market":"local",
+      "price":"324500000",
+      "priceCurrency":"IDR",
+      "priceRangeSale":"Low",
+      "product":{
+          "id":"2",
+          "name":"PrimaryGold",
+          "subname":""
+      },
+      "property":{
+          "bathrooms":"",
+          "bedrooms":"",
+          "carparks":"",
+          "developer":"",
+          "facilities":[
+
+          ],
+          "floor":"",
+          "id":"",
+          "locationLevel1":"jawa-barat",
+          "locationLevel2":"bandung",
+          "locationLevel3":"ngamprah",
+          "name":"Muhasabah Land Cluster Alsagriya",
+          "size1":"",
+          "size2":"",
+          "type":""
+      },
+      "status":"Active",
+      "subtitle":"",
+      "title":"Muhasabah Land Cluster Alsagriya"
+  },
+  "source":"NHP-New Launch-Top",
+  "target":"",
+  "user":{
+      "client":{
+          "id":"",
+          "language":"id-ID"
+      },
+      "login":{
+          "id":"70491",
+          "status":"logged-in",
+          "type":"Email"
+      }
+  }
+}
