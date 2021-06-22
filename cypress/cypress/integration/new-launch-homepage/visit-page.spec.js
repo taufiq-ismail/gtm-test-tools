@@ -27,12 +27,10 @@ describe("Tracker On Visit New Launch Page", () => {
   });
 
   describe("Testing With Login", () => {
-    before(() => {
-      cy.viewport("macbook-15").visit(Cypress.env("NEW_LAUNCH_PAGE")).doLogin();
-    });
-
     beforeEach(() => {
-      cy.viewport("macbook-15").reload();
+      cy.viewport("macbook-15")
+        .visit(Cypress.env("NEW_LAUNCH_PAGE"))
+        .doLoginAndRefresh();
     });
 
     it("Check gtm request is exist", () => {
